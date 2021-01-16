@@ -1,0 +1,58 @@
+@media only screen and (max-width: 48.8em){
+  body{
+    margin: 0 auto;
+    background-color: #fafafa;
+    padding: 1em;
+  }
+  header{
+    margin: 0 auto;
+    max-width: 900px;
+    align-items: center;
+  }
+  footer {
+    border: 6px ridge#fbeec1;
+    border-radius: 13px 13px 13px 13px;
+    background-color:#8d8741;
+    justify-items: center;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family:Parkavenue, cursive;
+  }
+  .logo-text{
+    font-size: 50px;
+    color: #000000;
+    align-items: center;
+  }
+  h1{
+    border: 6px ridge #fbeec1;
+    border-radius: 13px 13px 13px 13px;
+    padding: 1em;
+    margin: 0 auto;
+    align-items: center;
+    background-color: #dad9ce;
+    text-align: center;
+  }
+  h2{
+    text-align: center;
+  }
+  .copy-rights{
+    font-style: italic;
+    text-align: center;
+    color: rgb(0, 0, 0);
+  }
+  img{
+    border-radius: 13px 13px 13px 13px;
+    max-width:250px;
+    max-height:500px;
+    border: 6px ridge #fbeec1;
+    padding: 5px;
+  }
+  .p1{
+    font-size: 15px;
+  }
+  .dp-headline-1,.dp-headline-2,.dp-headline-3{
+    font-size: larger;
+  }
+
+}
+
