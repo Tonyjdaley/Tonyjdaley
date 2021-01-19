@@ -1,7 +1,7 @@
 body{
   max-width: 600px;
   margin: 0 auto;
-  background-color: #718285;
+  background-color: #ffffff;
   padding: 1em;
 }
 header{
@@ -49,6 +49,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 .p1{
   font-size: 30px;
+}
+.dp-update{
+  text-align: center;
 }
 
 
