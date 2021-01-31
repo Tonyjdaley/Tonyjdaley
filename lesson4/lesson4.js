@@ -1,16 +1,11 @@
-
-// ============== HAMBURGER MENU ================= //
+//drop menu
 const hambutton = document.querySelector('.menu');
 const mainnav = document.querySelector('.nav-bar');
 hambutton.addEventListener('click', () => {mainnav.classList.toggle('t')}, false);
-// To solve the mid resizing issue with responsive class on
+
 window.onresize = () => {if (window.innerWidth > 592) mainnav.classList.remove('t')};
 
-// ============== CURRENT DATE ================= //
-//const options = {weekday: 'long', day: 'numeric', month: 'long', year:'numeric'};
-//document.getElementById('currentdate').textContent = new Date().toLocaleDateString('en-US', options);
-
-// day names array
+//actuall names
 const dayNames = [
     "Sunday",
     "Monday",
@@ -21,8 +16,7 @@ const dayNames = [
     "Saturday"
     
 ];
-
-// Long month names array
+// give actuall names
 const months = [
     "January",
     "February",
@@ -45,5 +39,5 @@ const currentdate = dayName + ", " + todaysdate.getDate() + " " + monthName + " 
 
 document.getElementById('currentDate').textContent = currentdate;
 
-// ============== COPYRIGHT YEAR (must follow current date script above)================= //
+
 document.getElementById("copyrightYear").innerHTML = todaysdate.getFullYear();
