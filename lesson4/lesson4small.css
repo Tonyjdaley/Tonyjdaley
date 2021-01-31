@@ -1,0 +1,80 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  height: 100%;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+main h2{
+  font-size: xx-large;
+  text-align: center;
+  color: #32322C;
+}
+main div{
+  font-size: 30px;
+  color:#32322C;
+  background-color: #cecece;
+  padding: 5px;
+  margin-top: 10px;
+}
+header, footer {
+  text-align: center;
+  background-color: #4C6085;
+}
+header {	
+  display: flex;	
+  align-items: center;	
+  justify-content: center;	
+}
+header img {
+  width: 100px;
+  height: auto;	
+}
+header section {	
+  margin-left: 12px;	
+}
+.head {	
+  display: flex;	
+  flex-direction: column;	
+}
+.head div{
+  font-size: 12 px;
+}
+nav {
+  background-color: #39A0ED;
+}
+nav a {
+  color: #32322C;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none; 
+  font-size: 30px;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; 
+}
+.nav-bar li:first-child { 
+  display: block;
+}
+.nav-bar li { 
+  display: none;
+}
+.t li {
+  display: block;
+}
+.nav-bar a {
+  display: block;
+}
+a:hover {
+  background-color: #13C4A3;
+  color: #32322C;
+}
+a:active {
+  color: #13C4A3;
+}
