@@ -1,0 +1,36 @@
+@media only screen and (min-width: 37.5em) {
+	nav ul {
+		display: flex;
+	}
+  	.nav-bar li {
+	 	display: block; 
+	  	flex: 1 1 auto; 
+  }
+  	.nav-bar li:first-child {
+	  	display: none;
+  }
+  	footer, main {
+		max-width: 700px;
+		margin: 0 auto;
+  }
+  	.summary-img{
+		max-width:950px;
+		max-height:500px;
+		width:950px;
+		height:500px;
+  }
+  	.weather-summary .summary-text{
+    	position: absolute;
+    	z-index: 999;
+    	margin: 0 auto;
+    	left: 0;
+    	right: 0;        
+    	text-align: center;
+    	top: 30%; 
+    	background: rgba(0, 0, 0, 0.8);
+    	color: #fff;
+    	font-family:Parkavenue, cursive;
+    	width: 40%; 
+    	font-size: 12px;
+	  }
+  }
