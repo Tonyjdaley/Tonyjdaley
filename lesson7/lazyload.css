@@ -1,0 +1,30 @@
+html {
+    background-color:#4C6085;
+}
+body {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 1em;
+}
+h1{
+    text-align: center;
+}
+img[data-src] {
+    filter: blur(0.2em);
+}
+img {
+    box-shadow: 0px 10px 13px -7px #000000, 8px 7px 11px 7px rgba(0,0,0,0.66); 
+    box-shadow: 0px 10px 13px -7px #000000, 8px 7px 11px 7px rgba(0,0,0,0.66);
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center; 
+}
+.picture-size{
+    width: 250;
+    height: 325px;
+}
