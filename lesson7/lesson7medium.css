@@ -13,22 +13,13 @@
 		max-width: 700px;
 		margin: 0 auto;
   }
-  	.summary-img{
-		width: 100%;
-  		height: auto;
+  
+  main{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: auto;
   }
-  	.weather-summary .summary-text{
-    	position: absolute;
-    	z-index: 999;
-    	margin: 0 auto;
-    	left: 0;
-    	right: 0;        
-    	text-align: center;
-    	top: 30%; 
-    	background: rgba(0, 0, 0, 0.8);
-    	color: #fff;
-    	font-family:Parkavenue, cursive;
-    	width: 40%; 
-    	font-size: 12px;
-	  }
+  
+  
+  	
   }
