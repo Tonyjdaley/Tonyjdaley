@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Anthony's index page.</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Assignment Portal WDD 230 Anthony Daley BYUI">
+        <link rel="icon" href="8f299353-df61-46aa-9fec-5d23fa7159fe_200x200.png" type="image/gif" sizes="16x16">
+        <link href="lesson8small.css" rel="stylesheet" type="text/css">
+        <link href="lesson8medium.css" rel="stylesheet" type="text/css">
+        <link href="lesson8large.css" rel="stylesheet" type="text/css">
+        <link href="stormcenter.css" rel="stylesheet" type="text/css">
+        
+
+    </head>
+
+    <body>
+        <header>
+            
+            <img src="8f299353-df61-46aa-9fec-5d23fa7159fe_200x200.png" alt= "Weather-Logo">
+            
+            <section class="head">
+                <h1>Daley Weather</h1>
+                <div>Where Is Your Next Adventure</div>
+            </section>
+        </header>
+        <nav>
+            <ul class="nav-bar">
+                <li><a class="menu" href="#">&#9776; Menu</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a class="special-nav" href="#" href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+        <h2 class="gallery-head">Storm Center Report Form</h2>
+        <main>
+            <form action="thanks.html">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="fname">Full name:</label><br>
+                    <input type="text" id="fname" name="fname" required pattern="[A-Za-z\s]{4,20}"><br><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="ilikeweather@gmail.com"><br><br>
+                    <label for="phone">Phone Number:</label><br>
+                    <input type="phone" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890"><br><br>
+                    <label for="phone">Zip Code:</label><br>
+                    <input type="phone" id="phone" name="phone" required pattern="[0-9]{5}"><br><br>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Storm Information</legend>
+                    <label>Storm Date </label><br>
+                    <input type="date" name="date"><br><br>
+                    <label>Storm Type </label><br>
+                    <input list="storm-type" name="storm-type"><br><br>
+                        <datalist id="storm-type">
+                            <option value="Flash Flood">
+                            <option value="Hail">
+                            <option value="Hurricane">
+                            <option value="Thunderstorm">
+                            <option value="Tornado">
+                        </datalist>
+                    <label>Storm Severity <span id="ratevalue">1</span></label><br>
+                    <input type="range" name="storm-severity" value="1" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"><br><br>
+                        <datalist id="tickmarks">
+                            <option value="0">
+                            <option value="1">
+                            <option value="2">
+                            <option value="3">
+                            <option value="4">
+                            <option value="5">
+                            <option value="6">
+                            <option value="7">
+                            <option value="8">
+                            <option value="9">
+                            <option value="10">
+                        </datalist>
+                    <label class="top">Storm Region 
+                        <select name="storm-region" id="selectRegion" onchange="selectResponse()">
+                        <option value="" disabled selected>Select Region ...</option>
+                        <option value="Preston">Preston</option>
+                        <option value="Soda Springs">Soda Springs</option>
+                        <option value="Fish Haven">Fish Haven</option>
+                        </select>
+                    </label>
+
+                    <p>Are you in Danger?</p>
+                    <label><input type="radio" name="danger-level" value="Yes">Yes </label><br>
+                    <label><input type="radio" name="danger-level" value="No">No</label><br>
+                    <label><input type="radio" name="danger-level" value="Maybe">Maybe</label><br><br>
+
+                    <label>Comments</label><br>
+                    <textarea name="comments"></textarea><br>  
+                </fieldset><br>
+                    <input class="submit-button" type="submit" value="Submit">
+            </form>
+           
+        </main>
+        <footer>
+            
+            
+            <p class="copy-rights">&copy; 2021 | Anthony J Daley | Soldotna, AK | 
+                <a href="C:\Users\tonyj\Documents\Class 6 Web Fronted Development\GitHub\Tonyjdaley\index.html">Assignment Portal  |</a>  
+                <a href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a>
+            </p>
+            <p class="dp-update">Last Updated: <span id="currentDate"></span></p>
+    
+        </footer>
+        <script src="lesson8.js"></script>
+    </body>
+    
+    
+
+</html>
