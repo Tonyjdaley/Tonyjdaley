@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Anthony's index page.</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Assignment Portal WDD 230 Anthony Daley BYUI">
+        <link rel="icon" href="8f299353-df61-46aa-9fec-5d23fa7159fe_200x200.png" type="image/gif" sizes="16x16">
+        <link rel="stylesheet" href="../css/normalize.css" media="all">
+        <link href="small.css" rel="stylesheet" type="text/css">
+        <link href="medium.css" rel="stylesheet" type="text/css">
+        <link href="large.css" rel="stylesheet" type="text/css">
+        
+
+    </head>
+    <body onload="lastModified(); showFri(); fiveWeekDays();">
+    <section id="show-fri" class="top-text">
+        <h2>test test test test test</h2>
+        <h2>test test test test</h2>
+    </section>
+
+    <header>
+            
+        <img src="8f299353-df61-46aa-9fec-5d23fa7159fe_200x200.png" alt= "Weather-Logo">
+        
+        <section class="head">
+            <h1>Daley Weather</h1>
+            <div>Where Is Your Next Adventure</div>
+        </section>
+    </header>
+
+    <nav>
+        <ul class="nav-bar">
+            <li><a class="menu" href="#">&#9776; Menu</a></li>
+            <li><a class="special-nav" href="#">Home</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Preston Idaho</h2>
+        <div class="weather-summary">
+            <img class="summary-img" src="main-img.jpg" alt="Skyline" >
+            <div class="summary-text">
+                <h3>Weather Summary</h3>
+                <hr>
+                <p>Currently: <span id="current-desc"></span> <span id="current"></span>&#176; F</p>
+                <p>High: <span id="high"></span>&#176; F</p>
+                <p>Wind Chill: <span id="windChill"></span>&#176; F</p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Wind Speed: <span id="windSpeed"></span> mph</p>
+            </div>
+
+        </div>
+        <h3>5 Day Forecast</h3>
+        <table class="forecast_table">
+                <tr>
+                    <th><div id="today1"></div></th>
+                    <th><div id="today2"></div></th>
+                    <th><div id="today3"></div></th>
+                    <th><div id="today4"></div></th>
+                    <th><div id="today5"></div></th>
+                </tr>
+                <tr>
+                    <td><img src="" alt="" id="forecast-icon1" class="f-icons"><br><span id="forecast-temp1"></span>&#176; F</td>
+                    <td><img src="" alt="" id="forecast-icon2" class="f-icons"><br><span id="forecast-temp2"></span>&#176; F</td>
+                    <td><img src="" alt="" id="forecast-icon3" class="f-icons"><br><span id="forecast-temp3"></span>&#176; F</td>
+                    <td><img src="" alt="" id="forecast-icon4" class="f-icons"><br><span id="forecast-temp4"></span>&#176; F</td>
+                    <td><img src="" alt="" id="forecast-icon5" class="f-icons"><br><span id="forecast-temp5"></span>&#176; F</td>
+                </tr>
+        </table>
+            
+        <div class="grid-article">
+                <img class="article-img" src="pexels-brett-sayles-5033771.jpg" alt="Capital building">
+                    <h3>Some Header</h3>
+                    <p>
+                        some textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome text
+                        some textsome textsome textsome textsome textsome textvsome textsome textsome textsome textsome text
+                        some textsome textsome textvsome textsome textsome textvsome textsome textsome textsome textsome text
+                        some textsome textsome text
+                    </p>
+                    <p>some textsome textsome textsome textsome textsome textsome textvvsome textsome textsome textsome text
+                        some textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome text
+                        some textsome textsome textsome textsome textsome textsome textsome text
+                        some text
+                    </p>
+                    <p>some textsome textsome textsome textsome textsome textsome textsome textsome textsome text
+                        some textsome textsome textsome textsome textsome textsome textsome textsome textsome textsome text
+                        some textsome textsome textsome textsome textsome text
+                    </p>
+        </div>
+        <br>
+        <br>
+        <div class="grid-contact-info">
+                <img class="contact-info-img" src="Screenshot (13).png" alt="preston map">
+                <div class="contact-info-text">
+                    <h4>Contact Us</h4>
+                    <p> 30 N 1st E</p>
+                    <p>Preston, ID 83263</p>
+                    <br>
+                    <p> (999) 999-9999</p>
+                    <p> wegot.weather.com</p>
+                    <br>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-google"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                </div>
+        </div>
+            
+           
+    </main>
+
+    <footer>
+        <div id="cYear"></div>
+        <div id="mod"></div>
+    </footer>
+    <script src="index.js"></script>
+    
+    <script src="townweather.js" defer></script>
+    </body>
+</html>

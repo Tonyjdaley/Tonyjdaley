@@ -96,3 +96,11 @@ if('IntersectionObserver' in window) {
   function adjustRating(rating) {
     document.getElementById("ratevalue").innerHTML = rating;
   };
+
+
+
+
+
+  
+
+
