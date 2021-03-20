@@ -35,6 +35,19 @@
     grid-template-columns: 1fr 1fr ;
     grid-template-rows: auto;
   }
+  /* summary and main img */
+  .weather-summary .summary-text{
+    position: absolute;
+    top: 25px;
+    right: 400px;
+    width: 40%; 
+    height: 77%;
+    font-size: 12px;
+  }
+  .summary-img{
+		width: 100%;
+  	height: auto;
+  }
 }
 
   
