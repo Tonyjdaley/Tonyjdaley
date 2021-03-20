@@ -159,6 +159,7 @@ a:active {
   margin-top: 30px;
   background-color: white;
   padding: 30px;
+  border: #32322C 5px solid;
   box-shadow: 0px 10px 13px -7px #000000, 8px 7px 11px 7px rgba(0,0,0,0.66); 
   box-shadow: 0px 10px 13px -7px #000000, 8px 7px 11px 7px rgba(0,0,0,0.66);
 }
