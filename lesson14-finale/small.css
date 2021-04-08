@@ -231,6 +231,28 @@ a:active {
 }
 
 
+/*directory*/
+.main-directory{
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr ;
+    grid-template-rows: auto;
+    width: 90%;
+    height: 100%;
+    padding-left: 10px; 
+}
+.main-directory-imges{
+    margin: 0 auto;
+    max-width: 300px;
+    max-height: 250px;
+    width: 90%;
+    height: 100%;
+}
+.column-1-1{
+    border: solid 2px #0D0014
+}
+
+
 
 /* test */
 /* five day forecast 
