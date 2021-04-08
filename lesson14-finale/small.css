@@ -224,6 +224,11 @@ a:active {
     width: 90%;
     height: 100%;
 }
+/* join page*/
+.main-join{
+    display: grid;
+    grid-template-columns: 1fr;
+}
 
 
 
