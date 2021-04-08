@@ -249,7 +249,37 @@ a:active {
     height: 100%;
 }
 .column-1-1{
-    border: solid 2px #0D0014
+    border: solid 2px #0D0014;
+}
+/* contact */
+.main-contact{
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    width: 90%;
+    height: 100%;
+    padding-left: 10px; 
+}
+.contact-info{
+    grid-column: 1;
+}
+.contact-map{
+    grid-column: 1;
+}
+.contact-form{
+    grid-column: 1;
+}
+.contact-map-img{
+    border: solid 2px #0D0014;
+    margin: 0 auto;
+    max-width: 450px;
+    max-height: 400px;
+    width: 90%;
+    height: 100%; 
+}
+.contact-ul{
+    list-style-type: none;
 }
 
 

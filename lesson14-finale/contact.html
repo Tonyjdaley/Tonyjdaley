@@ -26,15 +26,45 @@
                 </ul>
             </nav>
             <div class="home-main-img-box">
-                <img src="" alt="" class="home-main-img">
+                <img src="contact-us.png" alt="" class="home-main-img">
             </div>
             
            
         </header>
         
         <main class="main-contact">
-            
-            
+            <div class="contact-info">
+                <h1>Contact Information</h1>
+                <h3>Street Address</h3>
+                <ul class="contact-ul">
+                    <li>1234 S. Ak River Circle</li>
+                    <li>Soldotna AK 99669</li>
+                </ul>
+                <h3>Phone number & Email</h3>
+                <ul class="contact-ul">
+                    <li>(907) 999-9999</li>
+                    <li>solchamber@gmail.com</li>
+                </ul>
+            </div>
+            <div class="contact-map">
+                <a href="https://goo.gl/maps/kibutpNDMdGi8bVS7"><img src="contact-map.png" alt="map" class="contact-map-img"></a>
+            </div>
+            <div class="contact-form">
+                <form action="thanks.html">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <label for="fname">Full name:</label><br>
+                        <input type="text" id="fname" name="fname" required pattern="[A-Za-z\s]{4,20}"><br><br>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" placeholder="adventure@gmail.com"><br><br>
+                        <label for="phone">Phone Number:</label><br>
+                        <input type="phone" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890"><br><br>
+                        <label>Comments</label><br>
+                        <textarea name="comments"></textarea><br>
+                        <input class="submit-button" type="submit" value="Submit">
+                    </fieldset>
+                </form>
+            </div>
         </main>
         
         <footer>
