@@ -1,0 +1,10 @@
+@media only screen and (min-width: 62.5em) {
+
+    /*home main img*/
+    .home-main-img-text{
+        font-size: 50px;
+    }
+    .home-main-img-weather{
+        display: block;
+    }
+}

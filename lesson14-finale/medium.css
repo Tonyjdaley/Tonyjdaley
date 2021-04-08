@@ -1,0 +1,72 @@
+@media only screen and (min-width: 37.5em) {
+    /*Navigation*/
+	nav ul {
+		display: flex;
+	}
+  	.nav-bar li {
+	 	display: block; 
+	  	flex: 1 1 auto; 
+    }
+  	.nav-bar li:first-child {
+	  	display: none;
+    }
+    /*home main img*/
+    .home-main-img-text{
+        font-size: 40px;
+    }
+	/*main content grid*/
+	.main-content-grid{
+		grid-template-columns: 1fr 1fr;
+	}
+	.h2-main-content-grid-1{
+		
+		grid-column: 1;
+		grid-row: 1;
+	}
+	.p-main-content-grid-1{
+		
+		grid-column: 1;
+		grid-row: 2;
+	}
+	.img-main-content-grid-1{
+		grid-column: 2;
+		grid-row: 1/4;
+		margin: 5px;
+	}
+	.h2-main-content-grid-2{
+		
+		grid-column: 2;
+		grid-row: 4;
+	}
+	.p-main-content-grid-2{
+		
+		grid-column: 2;
+		grid-row: 5;
+	}
+	.img-main-content-grid-2{
+		grid-column: 1;
+		grid-row: 4/8;
+		margin: 5px;
+	}
+	.h2-main-content-grid-3{
+		
+		grid-column: 1;
+		grid-row: 9;
+	}
+	.p-main-content-grid-3{
+		
+		grid-column: 1;
+		grid-row: 10;
+	}
+	.social-icons{
+		display: flex;
+		grid-column: 2;
+		grid-row: 10;
+		margin: 0 auto;
+	}
+	/* history section city */
+	.salmon-run{
+		max-width: 600px;
+    	max-height: 250px;
+	}
+}

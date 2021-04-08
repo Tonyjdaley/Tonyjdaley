@@ -1,0 +1,260 @@
+
+/*color pallette*/
+.color-pallette  {
+/*main color*/
+color: #CBF0F6;
+/*Off Main*/
+color: #25BBBB;
+/*Secondary*/
+color: #134767;
+/*Off Secondary*/
+color: #0E816F;
+/*Neutral color*/
+color: #EFF5FB;
+/*Text color*/
+color: #0D0014;
+/*Background*/
+color: #EFF5FB;
+}
+
+
+/* main css content*/
+html{
+    background-color: #134767;
+}
+body{
+    max-width: 950px;
+    background-color: #EFF5FB;
+    text-align: center;
+    margin: 0 auto;
+    border:solid 2px #EFF5FB;
+}
+header{
+    margin: 0 auto;
+}
+main{
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+/* text css*/
+h1, h2, h3, h4, h5 {
+    font-family: 'Vollkorn SC', serif; 
+}
+p, a {
+    font-family: 'Alata', sans-serif;
+}
+datalist{
+    font-family: 'GFS Didot', serif;
+}
+
+/* Navigation */
+nav {
+    background-color: #25BBBB;
+    width: 100%;
+}
+nav a {
+    color: #0D0014;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none; 
+    font-size: 30px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+}
+.nav-bar li:first-child { 
+    display: block;
+}
+.nav-bar li { 
+    display: none;
+}
+.t li {
+    display: block;
+}
+.nav-bar a {
+    display: block;
+}
+a:hover {
+    color: #0E816F;
+}
+a:active {
+    color: #0E816F;
+}
+.nav-highlighted{
+    color: tomato;
+}
+
+/* home page main img and information css.*/
+.home-main-img-box{
+    position: relative;
+    display: block;
+}
+.home-main-img{
+    max-width:950px;
+    max-height:500px;
+    width:100%;
+    height:100%;
+}
+.home-main-img-text{
+    border: #0D0014 2px solid;
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;        
+    text-align: center;
+    top: 50%; 
+    background: #EFF5FB;
+    color: #134767;
+    width: 40%; 
+    font-size: 30px;
+}
+  /*weather Summary*/
+  
+.home-main-img-weather{  
+    display: none;
+    border: #EFF5FB 2px solid;
+    position: absolute;
+    top: 25px;
+    right: 610px;
+    margin: 0 auto;   
+    background: #0D0014;
+    color: #EFF5FB;
+    width: 32%; 
+    height: 65%;
+    font-size: 16px;
+}
+
+/* upcoming event*/
+.upcoming-event{
+    position: relative;
+    max-width: 850px;
+    max-height: 200px;
+    height: 150px;
+    width: 90%;
+    background-color: #25BBBB;
+    margin:0 auto;
+    margin-top: 20px;
+    border: solid 2px #0D0014 ;
+}
+.upcoming-event-img{
+    position: absolute;
+    top: 45px;
+    left: 20px;
+    max-width: 150px;
+    max-height: 100px;
+    width: 80%;
+    height: 80%;
+}
+
+/* main content grid */
+.main-content-grid{
+    border: solid 2px #0D0014;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+.img-main-content-grid-1, .img-main-content-grid-2{
+    max-width: 400px;
+    max-height: 350px;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    border: solid 2px #0D0014;
+} 
+.icon-1, .icon-2, .icon-3, .icon-4{
+    width: 90px;
+    height: 90px;
+}
+
+
+
+
+/*local businesses */ 
+.img-local-business{
+    display: inline-block;
+    margin: 0 auto;
+    max-width: 300px;
+    max-height: 250px;
+    width: 90%;
+    height: 100%;
+}
+.img-local-business-1{
+    display: inline-block;
+    margin: 0 auto;
+    max-width: 300px;
+    max-height: 120px;
+    width: 90%;
+    height: 100%;
+}
+.img-local-business-2{
+    display: inline-block;
+    margin: 0 auto;
+    max-width: 300px;
+    max-height: 120px;
+    width: 90%;
+    height: 100%;
+}
+/* city css */
+.main-city{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+.events-city{
+    border: solid 2px #0D0014;
+}
+.history-city{
+    border: solid 2px #0D0014;
+}
+.salmon-run{
+    border: solid 2px #0D0014 ;
+    margin: 0 auto;
+    max-width: 300px;
+    max-height: 120px;
+    width: 90%;
+    height: 100%;
+}
+
+
+
+/* test */
+/* five day forecast 
+@media screen and (max-width: 600px) {
+    .five-day-display {
+      display: none;
+    }
+  }
+  .five-day-header{
+    text-align: center;
+  }
+  
+  
+  .five-day-table{
+    border: 2px solid #0D0014 ;
+    margin: 0 auto;
+  }
+  .five-day-table th {
+    padding: 15px 30px 15px 30px;
+    border: #0D0014 2px solid;
+  }
+  .five-day-table, .five-day-table td {
+    font-size: 25px;
+    border: #0D0014 2px solid;
+    padding: 8px;
+    border-collapse: collapse;
+    background-color: white;
+  }
+  .five-day-DoW{
+    background-color: #25BBBB;
+    ;
+  }*/
