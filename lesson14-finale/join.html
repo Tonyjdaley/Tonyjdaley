@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Soldotna</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Chamber of Commerce WDD 230 Anthony Daley BYUI">
+        <link rel="icon" href="8f299353-df61-46aa-9fec-5d23fa7159fe_200x200.png" type="image/gif" sizes="16x16">
+        <link rel="stylesheet" href="../css/normalize.css" media="all">
+        <link href="small.css" rel="stylesheet" type="text/css">
+        <link href="medium.css" rel="stylesheet" type="text/css">
+        <link href="large.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        
+        <header>
+            <nav>
+                <ul class="nav-bar">
+                    <li><a class="menu" href="#">&#9776; Menu</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="city.html">Soldotna</a></li>
+                    <li><a class="nav-highlighted" href="join.html">Join</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="home-main-img-box">
+                <!-- I made this image -->
+                <img src="join-us.png" alt="northern-lights" class="home-main-img">
+            </div>
+            
+           
+        </header>
+        
+        <main class="main-join">
+            <form action="thanks.html">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" required pattern="[A-Za-z\s]{4,20}"><br><br>
+                    <label for="fname">Last name:</label><br>
+                    <input type="text" id="fname" name="fname" required pattern="[A-Za-z\s]{4,20}"><br><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="salmonrun22@gmail.com"><br><br>
+                    <label for="phone">Title:</label><br>
+                    <input type="text" id="title" name="title" required pattern="[A-Za-z\s]{1,20}" placeholder="Mr."><br><br>
+                    
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Business Information</legend>
+                    <label>Business Name </label><br>
+                    <input type="text" id="bname" name="bname" required pattern="[A-Za-z\s]{4,40}"><br><br>
+                    <label>Business Address </label><br>
+                    <input type="text" name="baddress" placeholder="123 S. FireFly Circle"><br><br>
+                    <label>City </label><br>
+                    <input type="text" name="city"><br><br>
+                    <label>State/Province/Region </label><br>
+                    <input type="text" name="city"><br><br>
+                    <label for="Zip">Zip Code:</label><br>
+                    <input type="zip" id="zip" name="zip" required pattern="[0-9]{5}"><br><br>
+                    <label>WebSite Address </label><br>
+                    <input type="text" name="site"><br><br> 
+                    
+                    
+
+                    <label>Storm Severity <span id="ratevalue">1</span></label><br>
+                    <input type="range" name="storm-severity" value="1" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"><br><br>
+                        <datalist id="tickmarks">
+                            <option value="0">
+                            <option value="1">
+                            <option value="2">
+                            <option value="3">
+                            <option value="4">
+                            <option value="5">
+                            <option value="6">
+                            <option value="7">
+                            <option value="8">
+                            <option value="9">
+                            <option value="10">
+                        </datalist>
+                    <label class="top">Storm Region 
+                        <select name="storm-region" id="selectRegion" onchange="selectResponse()">
+                        <option value="" disabled selected>Select Region ...</option>
+                        <option value="Preston">Preston</option>
+                        <option value="Soda Springs">Soda Springs</option>
+                        <option value="Fish Haven">Fish Haven</option>
+                        </select>
+                    </label>
+
+                    <p>Are you in Danger?</p>
+                    <label><input type="radio" name="danger-level" value="Yes">Yes </label><br>
+                    <label><input type="radio" name="danger-level" value="No">No</label><br>
+                    <label><input type="radio" name="danger-level" value="Maybe">Maybe</label><br><br>
+
+                    <label>Comments</label><br>
+                    <textarea name="comments"></textarea><br>  
+                </fieldset><br>
+                    <input class="submit-button" type="submit" value="Submit">
+            </form>
+            
+        </main>
+        
+        <footer>
+            <p class="copy-rights">&copy; 2021 | Anthony J Daley | Soldotna, AK |   
+                <a href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a>
+            </p>
+        
+        </footer>
+        <script src="index.js"></script>
+        <script src="weather-reports.js"></script>
+        
+    </body>
+</html>
